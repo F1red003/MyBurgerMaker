@@ -120,7 +120,8 @@ footer {
   display: block;
 }
 /* Start ingredints choies styling*/
-.saucesChoice {
+.saucesChoice,
+.vegetablesChoice {
   display: none;
   flex-direction: row;
   position: absolute;
@@ -134,19 +135,20 @@ footer {
   border: 2px solid rgb(0, 0, 0);
   border-left: none;
 }
-#sauces:hover .saucesChoice {
+
+#sauces:hover .saucesChoice,
+#vegetables:hover .vegetablesChoice {
   display: flex;
 }
-#sauces {
+#sauces,
+#vegetables {
   position: relative;
 }
 
-#ketchup:hover {
+.choices:hover {
   box-shadow: 0px 0px 10px 2px rgb(49, 53, 255);
 }
-#mayonaise:hover {
-  box-shadow: 0px 0px 10px 2px rgb(49, 53, 255);
-}
+
 /* End ingredints choies styling*/
 
 .saucesChoice img {
