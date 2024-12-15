@@ -1,0 +1,25 @@
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensures the container wraps around the image */
+    text-align: center;    /* Centers the caption */
+  }
+  
+  .image-container img {
+    display: block; /* Removes extra spacing below the image */
+    width: 100%;    /* Optional: Ensures responsiveness */
+    height: auto;
+  }
+  
+  .image-container .caption {
+    position: absolute;  /* Places the caption over or under the image */
+    bottom: 0;           /* Positions at the bottom of the container */
+    left: 50%;           /* Centers horizontally */
+    transform: translateX(-50%); /* Correct centering adjustment */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;         /* Text color */
+    padding: 5px 10px;    /* Adds padding around the text */
+    font-size: 14px;      /* Font size */
+    width: 100%;          /* Optional: Makes the caption span the full width */
+    text-align: center;
+  }
+  

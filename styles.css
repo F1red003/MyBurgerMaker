@@ -1,0 +1,165 @@
+/* General Reset */
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  background: #bef1ff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #1b9ded;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+/* About Section */
+.about {
+  margin-top: 50px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  font-size: larger;
+}
+.FBM {
+  color: #1b9ded;
+  background-color: aquamarine;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+/* Button */
+.button {
+  text-decoration: none;
+  background: #1b9ded;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+/*burger-maker page*/
+.imgIngredients {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.ingredients {
+  background-color: #98c9e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  color: rgb(55, 58, 57);
+  gap: 5px;
+  border-radius: 3px;
+  border: 2px solid rgb(59, 99, 108);
+  box-shadow: 0px 0px 10px 2px rgb(49, 53, 255);
+}
+.imgIngredients {
+  text-align: center;
+  margin: 2px 0;
+  cursor: pointer;
+}
+#caption {
+  height: 40px;
+}
+.choiceImg {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/* Start ingredints choies styling*/
+.saucesChoice {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  top: 30px;
+  left: 100%;
+  gap: 10px;
+  font-size: x-small;
+  font-weight: bold;
+  background-color: #98c9e1;
+  border-radius: 3px;
+  border: 2px solid rgb(0, 0, 0);
+  border-left: none;
+}
+#sauces:hover .saucesChoice {
+  display: flex;
+}
+#sauces {
+  position: relative;
+}
+
+#ketchup:hover {
+  box-shadow: 0px 0px 10px 2px rgb(49, 53, 255);
+}
+#mayonaise:hover {
+  box-shadow: 0px 0px 10px 2px rgb(49, 53, 255);
+}
+/* End ingredints choies styling*/
+
+.saucesChoice img {
+  cursor: pointer;
+  width: 50px;
+  height: auto;
+}
+#captionChoice {
+  height: 15px;
+}
+.ingredientsElms {
+  transition: 0.4ms;
+}
+.ingredientsElms:hover {
+  box-shadow: 0px 0px 10px 2px rgb(49, 53, 255);
+}
