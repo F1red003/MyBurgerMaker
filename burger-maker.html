@@ -12,7 +12,7 @@
       <p>Create the perfect burger!</p>
     </header>
     <main>
-      <div class="container" >
+      <div class="container">
         <section class="ingredients">
           <p2
             ><em><strong>Choose your ingredients</strong></em></p2
@@ -23,13 +23,21 @@
             <figcaption class="imgIngredients" id="caption">Sauces</figcaption>
 
             <div class="saucesChoice">
-              <div id="ketchup" class="choices">
+              <div
+                id="ketchup"
+                class="choices"
+                onclick="addIngredient('Ketchup')"
+              >
                 <img src="img/ketchup.png" alt="ketchup" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Ketchup
                 </figcaption>
               </div>
-              <div id="mayonaise" class="choices">
+              <div
+                id="mayonaise"
+                class="choices"
+                onclick="addIngredient('mayonnaise')"
+              >
                 <img
                   src="img/mayonaisse.png"
                   alt="mayonaisse"
@@ -53,25 +61,25 @@
             </figcaption>
 
             <div class="vegetablesChoice">
-              <div id="tomato" class="choices">
+              <div id="tomato" class="choices" onclick="addIngredient('tomato')">
                 <img src="img/tomato.png" alt="tomato" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Tomato
                 </figcaption>
               </div>
-              <div id="onion" class="choices">
+              <div id="onion" class="choices" onclick="addIngredient('onion')">
                 <img src="img/onion.png" alt="onion" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Onion
                 </figcaption>
               </div>
-              <div id="lettuce" class="choices">
+              <div id="lettuce" class="choices" onclick="addIngredient('lettuce')">
                 <img src="img/lettuce.png" alt="lettuce" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Lettuce
                 </figcaption>
               </div>
-              <div id="cucumber" class="choices">
+              <div id="cucumber" class="choices" onclick="addIngredient('pickle')">
                 <img src="img/cucumber.png" alt="cucumber" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Cucumber
@@ -79,24 +87,23 @@
               </div>
             </div>
           </div>
-          <div class="ingredientsElms" id="cheese">
+          <div class="ingredientsElms" id="cheese" onclick="addIngredient('american')">
             <img src="img/cheese.png" alt="cheese" class="imgIngredients" />
             <figcaption class="imgIngredients" id="caption">Cheese</figcaption>
           </div>
-          <div class="ingredientsElms" id="meat">
+          <div class="ingredientsElms" id="meat" onclick="addIngredient('beef')">
             <img src="img/meat.png" alt="meat" class="imgIngredients" />
             <figcaption class="imgIngredients" id="caption">Meat</figcaption>
           </div>
         </section>
         <section class="workSpace">
-          <div class="bun bottomBun">
-
-          </div>
+          <div class="bun bottomBun" id="bun bottomBun"></div>
         </section>
       </div>
     </main>
     <footer>
       <p>&copy; Fredy's Burger Maker. All Rights Reserved.</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
