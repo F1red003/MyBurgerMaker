@@ -197,3 +197,101 @@ footer {
   box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.3),
     0 -10px -10px rgba(0, 0, 0, 0.3);
 }
+
+.sub_ingredient {
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+.mayonnaise {
+  background-color: #fad59f;
+  height: 70px;
+  width: 300px;
+  border-radius: 100% 100% 80% 80%;
+  transform: rotateX(45deg);
+}
+.Ketchup {
+  background-color: rgb(190, 42, 42);
+  height: 70px;
+  width: 300px;
+  border-radius: 100% 100% 80% 80%;
+  transform: rotateX(45deg);
+}
+.beef {
+  height: 70px;
+  width: 300px;
+  border-radius: 100% 100% 75% 75%;
+  background-color: #613203;
+}
+.onion {
+  width: 100px;
+  height: 60px;
+  background-color: #c868d2;
+  border-radius: 50%;
+  box-shadow: 200px 50px 0 #c868d2;
+  transform: rotateX(80deg);
+}
+.onion:before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 0px;
+  background-color: #c494c2;
+  border-radius: 50%;
+  box-shadow: 200px 50px 0 #c494c2;
+}
+.onion:after {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 20px;
+  top: 30px;
+  left: 25px;
+  background-color: #d4cad2;
+  border-radius: 50%;
+  box-shadow: 200px 50px 0 #d4cad2;
+  
+}
+.tomato {
+  background-color: #a00505;
+  height: 70px;
+  width: 300px;
+  border-radius: 100% 100% 80% 80%;
+  transform: rotateX(45deg);
+}
+.tomato:after {
+  content: "";
+  position: absolute;
+  height: 55px;
+  width: 300px;
+  top: 2px;
+  right: 1px;
+  background-color: #ff0808;
+  border-radius: 100%;
+}
+.pickle {
+  height: 70px;
+  width: 95px;
+  background-color: green;
+  border-radius: 50%;
+  transform: rotateX(80deg);
+  box-shadow: 150px 20px 0 green;
+}
+.pickle:after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 90px;
+  top: 5px;
+  left: 3px;
+  background-color: rgb(202, 226, 202);
+  border-radius: 50%;
+  box-shadow: 150px 20px 0 rgb(202, 226, 202);
+}
+.lettuce {
+  width: 300px;
+  height: 70px;
+  background-color: #0d4;
+  border-radius: 50% 50% 5% 50%;
+  transform: rotateX(65deg);
+}
