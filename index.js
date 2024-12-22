@@ -56,7 +56,7 @@ const addIngredient = (ingredient) => {
       break;
 
     case ingredientElement.classList.contains("onion"):
-      if (listIngredient != []) {
+      if (listIngredient >0) {
         t = t + 3;
       } else {
         t = t + 30;
@@ -67,7 +67,7 @@ const addIngredient = (ingredient) => {
       price.textContent = prix.toFixed(2) + " DH";
       break;
     case ingredientElement.classList.contains("pickle"):
-      if (listIngredient != []) {
+      if (listIngredient >0) {
         t = t + 3;
       } else {
         t = t + 30;
