@@ -13,19 +13,22 @@
     </header>
     <main>
       <div class="topContainer">
-      <section class="payment">
-        <p id="text">you will pay:</p>
-        
-        <label id="price">0 DH</label>
-      </section>
-      <section class="startOverFinshBtns">
-        <button class="btn" id="startOverBtn" onclick="location.reload()">Start Over</button>
-        <button class="btn" id="finishBtn" onclick="addIngredient('top-bun')">Finish</button>
-        <button class="btn" id="payBtn"> Pay</button>
+        <section class="payment">
+          <p id="text">you will pay:</p>
 
-      </section>
+          <label id="price">0 DH</label>
+        </section>
+        <section class="startOverFinshBtns">
+          <button class="btn" id="startOverBtn" onclick="location.reload()">
+            Start Over
+          </button>
+          <button class="btn" id="finishBtn" onclick="addIngredient('top-bun')">
+            Finish
+          </button>
+          <button class="btn" id="payBtn">Pay</button>
+        </section>
       </div>
-      
+
       <div class="container">
         <section class="ingredients">
           <p2
@@ -75,7 +78,11 @@
             </figcaption>
 
             <div class="vegetablesChoice">
-              <div id="tomato" class="choices" onclick="addIngredient('tomato')">
+              <div
+                id="tomato"
+                class="choices"
+                onclick="addIngredient('tomato')"
+              >
                 <img src="img/tomato.png" alt="tomato" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Tomato
@@ -87,13 +94,21 @@
                   Onion
                 </figcaption>
               </div>
-              <div id="lettuce" class="choices" onclick="addIngredient('lettuce')">
+              <div
+                id="lettuce"
+                class="choices"
+                onclick="addIngredient('lettuce')"
+              >
                 <img src="img/lettuce.png" alt="lettuce" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Lettuce
                 </figcaption>
               </div>
-              <div id="cucumber" class="choices" onclick="addIngredient('pickle')">
+              <div
+                id="cucumber"
+                class="choices"
+                onclick="addIngredient('pickle')"
+              >
                 <img src="img/cucumber.png" alt="cucumber" class="choiceImg" />
                 <figcaption class="choiceImg" id="captionChoice">
                   Cucumber
@@ -101,11 +116,19 @@
               </div>
             </div>
           </div>
-          <div class="ingredientsElms" id="cheese" onclick="addIngredient('edam')">
+          <div
+            class="ingredientsElms"
+            id="cheese"
+            onclick="addIngredient('edam')"
+          >
             <img src="img/cheese.png" alt="cheese" class="imgIngredients" />
             <figcaption class="imgIngredients" id="caption">Cheese</figcaption>
           </div>
-          <div class="ingredientsElms" id="meat" onclick="addIngredient('beef')">
+          <div
+            class="ingredientsElms"
+            id="meat"
+            onclick="addIngredient('beef')"
+          >
             <img src="img/meat.png" alt="meat" class="imgIngredients" />
             <figcaption class="imgIngredients" id="caption">Meat</figcaption>
           </div>
@@ -114,7 +137,6 @@
           <div class="bun bottomBun" id="bun bottomBun"></div>
         </section>
       </div>
-      
     </main>
     <footer>
       <p>&copy; Fredy's Burger Maker. All Rights Reserved.</p>
