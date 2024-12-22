@@ -12,6 +12,20 @@
       <p>Create the perfect burger!</p>
     </header>
     <main>
+      <div class="topContainer">
+      <section class="payment">
+        <p id="text">you will pay:</p>
+        
+        <label id="price">0 DH</label>
+      </section>
+      <section class="startOverFinshBtns">
+        <button class="btn" id="startOverBtn" onclick="location.reload()">Start Over</button>
+        <button class="btn" id="finishBtn" onclick="addIngredient('top-bun')">Finish</button>
+        <button class="btn" id="payBtn"> Pay</button>
+
+      </section>
+      </div>
+      
       <div class="container">
         <section class="ingredients">
           <p2
@@ -100,6 +114,7 @@
           <div class="bun bottomBun" id="bun bottomBun"></div>
         </section>
       </div>
+      
     </main>
     <footer>
       <p>&copy; Fredy's Burger Maker. All Rights Reserved.</p>
