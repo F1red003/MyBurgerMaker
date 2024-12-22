@@ -21,9 +21,9 @@ const addIngredient = (ingredient) => {
       listIngredient+="tamato";
       break;
 
-    case ingredientElement.classList.contains("american"):
-      t = t + 11;
-      listIngredient+="american";
+    case ingredientElement.classList.contains("edam"):
+      t = t + 25;
+      listIngredient+="edam";
       break;
 
     case ingredientElement.classList.contains("lettuce"):
