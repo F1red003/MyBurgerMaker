@@ -8,7 +8,7 @@ price.textContent = prix.toFixed(2) + " DH";
 const addIngredient = (ingredient) => {
   if (listIngredient.length < 13) {
     z = z + 10;
-
+    
     var ingredientElement = document.createElement("div");
 
     ingredientElement.className = ingredient + " sub_ingredient";
@@ -85,12 +85,13 @@ const addIngredient = (ingredient) => {
         price.textContent = prix.toFixed(2) + " DH";
         break;
     }
+    
   } else {
     alert(
       "You can't add more than 13 ingredients or place ingredients on top of the bun"
     );
   }
-
+  
   ingredientElement.style.top = "-" + t + "px";
 
   ingredientElement.style.zIndex = z;
@@ -98,19 +99,22 @@ const addIngredient = (ingredient) => {
   var Burger = document.getElementById("bun bottomBun");
 
   Burger.insertBefore(ingredientElement, Burger.firstChild);
+  
 };
+
 const resetBurger = () => {
   listIngredient = [];
   location.reload();
 };
+localStorage.setItem("prix", prix);
 
-const showAlertWithPrice = () => {
+function showAlertWithPrice(){
   const nameInput = document.getElementById("name");
   const clientName = nameInput.value;
-  alert(
-    `Enjoy your meal Mr. or Ms. ${clientName}, the price is ${prix.toFixed(
+  window.alert(
+    `Enjoy your meal Mr. or Ms.${clientName}, the total price is ${prix.toFixed(
       2
     )} DH`
   );
-};
-
+  
+}
